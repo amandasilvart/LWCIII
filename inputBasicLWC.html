@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="IMC">
+
+        <lightning-input label="nome" type="text" name="nome" onchange={handleNomeChange}></lightning-input>
+        <lightning-input label="peso" type="number" name="peso" onchange={handlePesoChange}></lightning-input>
+        <lightning-input label="altura" type="number" name="altura" onchange={handleAlturaChange}></lightning-input>
+
+        <lightning-button variant="brane" label="calcular" onclick={handleOnClick}></lightning-button>
+        <div if:true={imc}>Seu IMC é: {imc}</div>
+    </lightning-card>
+    
+</template>
